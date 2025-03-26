@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Играта в склада - Увод</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #8b4513;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Секция за герои и места */
+        .info-section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #556b2f;
+            border-left: 4px solid #8b4513;
+            padding-left: 10px;
+            margin: 30px 0 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .info-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            color: #006400;
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .info-card p {
+            min-height: 60px;
+        }
+
+ 
+        .info-card img {
+            width: 100%;
+            height: 180px; /* Фиксирана височина */
+            object-fit: cover; /* Запазва пропорциите, като изрязва излишното */
+            object-position: center; /* Центрира изображението */
+            border-radius: 3px;
+            border: 1px solid #ddd;
+}
+.info-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.info-card img {
+    width: 100%;
+    height: 180px; /* или 'auto' за запазване на пропорциите */
+    object-fit: cover;
+    margin-top: auto; /* Избутва картинката надолу */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>БЕЗСЛЕДНО</h1>
+        
+        <!-- Герои -->
+        <div class="info-section">
+            <h2 class="section-title">Герои</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Елинор Уест</h3>
+                    <p>40-годишен детектив с мрачно минало, опитен в разследванията на серийни убийци.</p>
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\Precise architectural color photography captures Detective Eleanor West, a middle-aged woman with sharp features and a cheek scar.  The image features artistic lighting, abstract patterns, sharp lines, detailed str.jpg" alt="Елинор Уест" width="400" height="300">
+                </div>
+                
+                <div class="info-card">
+                    <h3>Алекс Крус</h3>
+                    <p>Младши детектив, идеалистичен и амбициозен, но все още неопитен.</p>
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\Detective Alex Cruz.jpg"  width="400" height="300">
+                </div>
+                
+                <div class="info-card">
+                    <h3>Мейсън Келер</h3>
+                    <p>Главен заподозрян, бивш военен със сложна миналост.</p>
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\Mason Keller (The Killer).jpg" alt="Мейсън Келер">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Места -->
+        <div class="info-section">
+            <h2 class="section-title">Места на действието</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Изоставен склад</h3>
+                    <p>Мястото на първото убийство, мрачно и запустяло.</p>
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\warehouse.jpg" alt="Изоставен склад">
+                </div>
+                
+                <div class="info-card">
+                    <h3>Готическо имение</h3>
+                    <p>Вторият сцена на престъпление, луксозна къща със зловеща история.</p>
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\готик.jpg" alt="Готическо имение">
+                </div>
+                
+                <div class="info-card">
+                    <h3>Полицейски архив</h3>
+                    <p>Мястото, където се крият ключовите улики.</p>
+
+                    <img src="C:\Users\velik\Desktop\Нова папка\images\evidenceroom.jpg" alt="Полицейски архив">
+                </div>
+            </div>
+        </div>
+
+        <!-- Сцена 1 -->
+        <h2>Сцена 1: Намерението в склада</h2>
+        <div class="scene-container">
+            <div class="story-text">
+                <p>В изоставен склад на окрайнините на града, прашинки танцуват в единствената лъч луна, пробиващ през мръсните прозорци. Въздухът е тежък от мириса на гниене и влажна земя. Елинор Уест (40-годишна, с изтощени очи), светейки с фенерче, клекнала до тяло. Алекс Крус (20-годишен, нетърпелив и леко претоварен) стои зад нея.</p>
+                <p>Елинор преглежда жертвата - млад мъж във военна яка. Загадъчни символи са изрезкани на гърдите му.</p>
+                <p>Алекс осветява стените, разкривайки още символи, нарисувани с тъмна, вискозна течност.</p>
+                <p>Елинор внимателно докосва символ, изражението ѝ мрачно. Изважда доказателствена торбичка и започва да събира проби.</p>
+                <p>Елинор забелязва износена военна белег до ръката на жертвата.</p>
+                <p>Алекс кима, лицето му бледо, и внимателно събира белега.</p>
+                <p>Елинор поглежда през прозореца към мръсния град. Започва да вали, отразявайки бурята, която кипи в нея.</p>
+            </div>
+            <div class="dialogue-container">
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Исус...</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Изглежда, нашият убиец обича да изпраща съобщения.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Какво са тези? Някакъв вид... символ?</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Изглежда военно. Нещо от програма "Черни операции", може би. Нещо старо.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Цялата тази постановка... прилича на ритуал. Той се опитва да се покаже.</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    <em>(грубо)</em><br>
+                    Той иска да го намерим. Иска да играем неговата игра.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Вземи тази белег. И проследи символите. Това е само началото.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Това е... смущаващо. Далеч по-зле от всичко, което съм виждал.</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Добре дошли в големите лиги, Крус. Още по-зле предстои.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Сцена 2 -->
+        <h2>Сцена 2: Кошмар в предградията</h2>
+        <div class="scene-container">
+            <div class="story-text">
+                <p>Слънчеви лъчи пробиват през големите прозорци, осветявайки безупречен всекидневен салон. Сцената е идилична, рязко контрастираща с мрачния склад. Тяло лежи на персийски килим, ярко червено петно на белия килим. Елинор и Алекс стоят над него. Жертвата, жена на средна възраст, е облечена в елегантни дрехи. Една единствена, перфектно оформена роза лежи на гърдите ѝ.</p>
+                <p>Алекс трепери, въпреки топлината на слънцето. Оглежда стаята - перфектният интериор в контраст с ужасната сцена.</p>
+                <p>Елинор изважда лупа, изследвайки стъблото на розата. Намира едва забележима маркировка - друг символ.</p>
+                <p>Елинор минава с ръка през косата си, движенията ѝ остри, разтревожени. Пренебрегвайки въпроса, тя забелязва рамкирана снимка на масата - жената с млад мъж в униформи. Мъжът прилича на жертвата от склада.</p>
+                <p>Елинор инстинктивно докосва белеза на китката си - наследство от собственото ѝ мрачно минало.</p>
+            </div>
+            <div class="dialogue-container">
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Това е... различно.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Различно, но свързано.</p>
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Свързано как?</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Символите. Видях нещо подобно... слабо изрезбано на военната белег от склада.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Значи targetsра конкретни хора? Това някаква... вендета?</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Това е повече от вендета, Алекс. Това е... ритуално. Изчислено. И той оставя следи.</p>
+                </div>
+                <div class="dialogue">
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    Брат. Той targetsра семейства.</p>
+                    <p><span class="character-name">АЛЕКС</span><br>
+                    Семейства? Но... защо?</p>
+                    <p><span class="character-name">ЕЛИНОР</span><br>
+                    <em>(тихо, мрачно)</em><br>
+                    Защото някои дългове... никога не умират.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="#" class="nav-button disabled">Назад</a>
+            <a href="warehouse.html" class="nav-button">Напред</a>
+        </div>
+    </div>
+</body>
+</html>
